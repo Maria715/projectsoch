@@ -1,0 +1,65 @@
+/* Custom styles for Project Soch website */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom utility classes */
+.font-display {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Custom color variables */
+:root {
+  --color-primary: #233d60;
+  --color-secondary: #ff7f00;
+  --color-dark: #1d314e;
+  --color-primary-light: #2d4a6b;
+  --color-secondary-light: #ff8f1a;
+}
+
+/* Component styles */
+.nav-link {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--color-secondary);
+}
+
+.mobile-nav-link {
+  display: block;
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+.mobile-nav-link:hover {
+  color: var(--color-secondary);
+}
+
+.donate-btn {
+  transition: all 0.3s ease;
+  transform: scale(1);
+}
+
+.donate-btn:hover {
+  transform: scale(1.05);
+}
+
+.counter {
+  transition: all 1s ease;
+}
