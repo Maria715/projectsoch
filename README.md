@@ -1,3 +1,13 @@
+# 🚨 IMPORTANT: Custom Domain Temporarily Disabled
+
+**Status**: This website is currently hosted on GitHub Pages at: https://maria715.github.io/projectsoch/
+
+**Custom Domain**: `projectsoch.eu` has been temporarily disabled due to DNS configuration issues.
+
+**To Access Your Website**: Use https://maria715.github.io/projectsoch/ until DNS is properly configured.
+
+---
+
 # Project Soch Website
 
 A modern, responsive website for Project Soch - a non-profit organization dedicated to empowering street kids and the transgender community through education, support, and opportunities.

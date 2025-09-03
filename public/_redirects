@@ -1,0 +1,5 @@
+# GitHub Pages Redirect Override
+# This file ensures the site works on GitHub Pages without custom domain redirects
+
+# Remove any custom domain redirects
+/*    /index.html   200
