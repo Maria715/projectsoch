@@ -10,7 +10,7 @@ const Hero = () => {
   useEffect(() => {
     const animateCounters = () => {
       const targets = {
-        kids: 100,
+        kids: 48,
         volunteers: 50,
         programs: 5
       };
