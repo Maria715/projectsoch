@@ -158,8 +158,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 For questions or support, please contact:
 - Email: info@projectsoch.org
-- Phone: +91 98765 43210
-- Address: 123 Hope Street, Community Center, Mumbai, Maharashtra 400001, India
+- Address: Frankfurt, Germany
 
 ---
 
