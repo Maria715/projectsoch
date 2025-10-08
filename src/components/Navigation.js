@@ -168,14 +168,14 @@ const Navigation = () => {
           
           {/* Desktop Navigation */}
           <div style={navLinksStyles} className="nav-links">
-            <a href="#home" style={navLinkStyles}>Home</a>
-            <a href="#about" style={navLinkStyles}>About</a>
-            <a href="#programs" style={navLinkStyles}>Programs</a>
-            <a href="#get-involved" style={navLinkStyles}>Get Involved</a>
-            <a href="#mission" style={navLinkStyles}>Mission</a>
-            <a href="#stories" style={navLinkStyles}>Stories</a>
-            <a href="#volunteers" style={navLinkStyles}>Volunteers</a>
-            <a href="#contact" style={navLinkStyles}>Contact</a>
+            <a href="#home" style={navLinkStyles} className='nav-hover'>Home</a>
+            <a href="#about" style={navLinkStyles} className='nav-hover'>About</a>
+            <a href="#programs" style={navLinkStyles} className='nav-hover'>Programs</a>
+            <a href="#get-involved" style={navLinkStyles} className='nav-hover'>Get Involved</a>
+            <a href="#mission" style={navLinkStyles} className='nav-hover'>Mission</a>
+            <a href="#stories" style={navLinkStyles} className='nav-hover'>Stories</a>
+            <a href="#volunteers" style={navLinkStyles} className='nav-hover'>Volunteers</a>
+            <a href="#contact" style={navLinkStyles} className='nav-hover'>Contact</a>
           </div>
           
           {/* CTA Button */}
