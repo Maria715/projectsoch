@@ -182,7 +182,7 @@ const Navigation = () => {
           <div style={{ display: isMobile ? 'none' : 'block' }} className="nav-cta">
             <a 
               href="#" 
-              style={ctaButtonStyles}
+           
               onClick={(e) => {
                 e.preventDefault();
                 const phoneNumber = "491724350490";
@@ -190,6 +190,8 @@ const Navigation = () => {
                 const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
                 window.open(whatsappUrl, '_blank');
               }}
+          
+               className="bg-secondary text-white px-6 py-3 rounded-xl font-semibold shadow-md hover:bg-white hover:text-secondary transition-all duration-700 border border-secondary"
             >
               Donate Now
             </a>
