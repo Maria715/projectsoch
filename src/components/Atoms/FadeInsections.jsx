@@ -12,7 +12,7 @@ const FadeInSection = ({ children }) => {
           observer.unobserve(ref.current); // only once
         }
       },
-      { threshold: 0.4 }
+      { threshold: 0.2}
     );
 
     if (ref.current) observer.observe(ref.current);
