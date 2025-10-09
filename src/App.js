@@ -36,10 +36,11 @@ function App() {
       <FadeInSection>
         <Volunteers />
       </FadeInSection>
-      <FadeInSection>
+      {/* <FadeInSection>
         <Contact />
 
-      </FadeInSection>
+      </FadeInSection> */}
+      <Contact/>
 
       <Footer />
 

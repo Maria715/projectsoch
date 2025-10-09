@@ -442,7 +442,7 @@ const Contact = () => {
     flex: '1',
     minWidth: window.innerWidth > 768 ? '400px' : '100%',
     alignItems: 'center',
-    flexDirection: window.innerWidth > 480 ? 'row' : 'column'
+    flexDirection: window.innerWidth > 768 ? 'row' : 'column'
   };
 
   const newsletterInputFullStyles = {
@@ -456,8 +456,8 @@ const Contact = () => {
     backgroundColor: 'white',
     fontSize: '1rem',
     transition: 'all 0.3s ease',
-    width: window.innerWidth <= 480 ? '100%' : 'auto',
-    minWidth: window.innerWidth <= 480 ? '100%' : '300px'
+    width: window.innerWidth <= 768 ? '100%' : 'auto',
+    minWidth: window.innerWidth <= 768 ? '100%' : '300px'
   };
 
   const newsletterButtonFullStyles = {
@@ -475,7 +475,7 @@ const Contact = () => {
     fontSize: '1rem',
     letterSpacing: '0.025em',
     whiteSpace: 'nowrap',
-    width: window.innerWidth <= 480 ? '100%' : 'auto'
+    width: window.innerWidth <= 768 ? '100%' : 'auto'
   };
 
   // Full Width Partnership Styles

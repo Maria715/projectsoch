@@ -63,7 +63,9 @@ const GetInvolved = () => {
     display: 'grid',
     gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
     gap: '2rem',
-    marginBottom: '3rem'
+    marginBottom: '3rem',
+    justifyItems: 'center',
+    width:'100%'
   };
 
   const cardStyles = {
