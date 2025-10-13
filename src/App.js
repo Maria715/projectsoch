@@ -10,21 +10,39 @@ import Mission from './components/Mission';
 import Volunteers from './components/Volunteers';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import FadeInSection from './components/Atoms/FadeInsections';
 
 function App() {
   return (
     <div className="App">
       <Navigation />
       <Hero />
-      <About />
-      <Programs />
-      <GetInvolved />
+      <FadeInSection>
+        <About />
+      </FadeInSection>
+      <FadeInSection>
+        <Programs />
+      </FadeInSection>
+      <FadeInSection>
+        <GetInvolved />
+      </FadeInSection>
+
       <Donate />
-      <Mission />
+      <FadeInSection>
+        <Mission />
+      </FadeInSection>
+
       {/* <Stories /> */}
-      <Volunteers />
-      <Contact />
+      <FadeInSection>
+        <Volunteers />
+      </FadeInSection>
+      <FadeInSection>
+        <Contact />
+
+      </FadeInSection>
+
       <Footer />
+
     </div>
   );
 }
