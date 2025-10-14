@@ -149,7 +149,7 @@ const Hero = () => {
   return (
     <section id="home" style={heroStyles}>
       <div style={containerStyles}>
-        <div style={{ maxWidth: '64rem', margin: '0 auto' }}>
+        <div style={{ maxWidth: '64rem', margin: '0 auto', paddingTop: '40px' }}>
           <h1 style={titleStyles}>
             Empowering Street Kids &
             <span style={{ color: '#ff7f00' }}> Transgender Community</span>
