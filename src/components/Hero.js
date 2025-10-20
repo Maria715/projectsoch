@@ -18,7 +18,7 @@ const Hero = () => {
       const duration = 2000;
       const steps = 60;
       const stepValue = {};
-      
+
       Object.keys(targets).forEach(key => {
         stepValue[key] = targets[key] / steps;
       });
@@ -26,7 +26,7 @@ const Hero = () => {
       let currentStep = 0;
       const timer = setInterval(() => {
         currentStep++;
-        
+
         setCounters(prev => ({
           kids: Math.min(prev.kids + stepValue.kids, targets.kids),
           volunteers: Math.min(prev.volunteers + stepValue.volunteers, targets.volunteers),
@@ -151,23 +151,24 @@ const Hero = () => {
       <div style={containerStyles}>
         <div style={{ maxWidth: '64rem', margin: '0 auto' }}>
           <h1 style={titleStyles}>
-            Empowering Street Kids & 
+            Empowering Street Kids &
             <span style={{ color: '#ff7f00' }}> Transgender Community</span>
           </h1>
           <p style={subtitleStyles}>
             Through education, support, and opportunities, we're building a brighter future for those who need it most.
           </p>
           <div style={buttonContainerStyles}>
-            <a href="#get-involved" style={primaryButtonStyles}>
+            <a href="#get-involved" 
+            className="  bg-secondary text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-700 ease-in-out shadow-[0_10px_25px_rgba(255,127,0,0.3)] border-2 border-secondary hover:bg-white hover:text-secondary active:scale-9  min-w-[180px] text-center ">
               Get Involved
             </a>
-            <a href="#about" style={secondaryButtonStyles}>
+            <a href="#about"    className="  bg-none text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-700 ease-in-out shadow-[0_10px_25px_rgba(255,127,0,0.3)] border-2 border-white  hover:bg-white hover:text-secondary hover:border-secondary active:scale-9  min-w-[180px] text-center " >
               Learn More
             </a>
           </div>
         </div>
       </div>
-      
+
       {/* Impact Stats */}
       <div style={statsContainerStyles}>
         <div style={statsGridStyles}>
