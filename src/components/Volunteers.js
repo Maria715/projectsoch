@@ -49,8 +49,8 @@ const TeamMemberCard = ({ image, name, role, email, socialLinks }) => {
 
   //  front container for image
   const imageFrontContainer = {
-    width: "90%",
-    height: "80%",
+    width: "100%",
+    height: "100%",
     borderRadius: "50% / 35%",
     overflow: "hidden",
     boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
