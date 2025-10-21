@@ -22,7 +22,7 @@ const Donate = () => {
 
   const handleDonate = (amount) => {
     const phoneNumber = "491724350490"; // German number without + and spaces
-    const message = `Hello! I would like to make a donation of €${amount} to support Project Soch's mission of empowering street kids and the transgender community. Please let me know how I can proceed with the donation. Thank you!`;
+    const message = `Hello! I would like to make a donation of €${amount} to support Project Soch's mission of empowering street kids and the KhawajaSira (Intersex) community. Please let me know how I can proceed with the donation. Thank you!`;
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
     
@@ -168,7 +168,7 @@ const Donate = () => {
       <div style={containerStyles}>
         <h2 style={titleStyles}>Make a Difference Today</h2>
         <p style={subtitleStyles}>
-          Your donation directly supports our programs and helps us continue our mission of empowering street kids and the transgender community through education.
+          Your donation directly supports our programs and helps us continue our mission of empowering street kids and the KhawajaSira (Intersex) community through education.
         </p>
         
         <div style={gridStyles}>

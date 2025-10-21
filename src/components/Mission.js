@@ -25,7 +25,7 @@ const Mission = () => {
       progress: 75
     },
     {
-      title: "International donor base, 1,000+ children supported, transgender.",
+      title: "International donor base, 1,000+ children supported, KhawajaSira (Intersex).",
       progress: 60
     },
     {

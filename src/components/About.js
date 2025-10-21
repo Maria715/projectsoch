@@ -135,7 +135,7 @@ const About = () => {
         <div style={headerStyles}>
           <h2 style={titleStyles}>About Project Soch</h2>
           <p style={subtitleStyles}>
-            We are a dedicated non-profit organization committed to creating positive change in the lives of street children and the transgender community.
+            We are a dedicated non-profit organization committed to creating positive change in the lives of street children and the KhawajaSira (Intersex) community.
           </p>
         </div>
         
@@ -143,7 +143,7 @@ const About = () => {
           <div style={textContentStyles}>
             <h3 style={storyTitleStyles}>Our Story</h3>
             <p style={paragraphStyles}>
-            Founded in 2023, Project Soch began with a powerful vision: to uplift communities that society too often overlooks. Millions of street children, beggars, and transgender individuals lack access to education, dignity, and sustainable livelihoods. Traditional financial aid frequently fails due to misuse of funds, while many parents depend on their children’s earnings instead of sending them to school.
+            Founded in 2023, Project Soch began with a powerful vision: to uplift communities that society too often overlooks. Millions of street children, beggars, and KhawajaSira (Intersex) individuals lack access to education, dignity, and sustainable livelihoods. Traditional financial aid frequently fails due to misuse of funds, while many parents depend on their children’s earnings instead of sending them to school.
             </p>
             <p style={paragraphStyles}>
             At Project Soch, we believe in breaking this cycle by ensuring that education and support reach those who need it most, creating opportunities for empowerment and a brighter future.

@@ -12,7 +12,7 @@ const Stories = () => {
     {
       id: 2,
       name: "Arjun, 22",
-      role: "Transgender youth",
+      role: "KhawajaSira (Intersex) youth",
       image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80",
       story: "The skill training program changed my life. I learned computer skills and now I have my own small business. Project Soch believed in me when no one else did."
     },

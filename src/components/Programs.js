@@ -12,8 +12,8 @@ const Programs = () => {
     },
     {
       id: 2,
-      title: "Skill Training for Transgender Youth",
-      description: "Vocational training programs in various skills like computer literacy, beauty services, and entrepreneurship to help transgender youth become financially independent.",
+      title: "Skill Training for KhawajaSira (Intersex) Youth",
+      description: "Vocational training programs in various skills like computer literacy, beauty services, and entrepreneurship to help KhawajaSira (Intersex) youth become financially independent.",
       image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
       icon: "fas fa-tools",
       status: "Ongoing"
