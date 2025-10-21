@@ -146,7 +146,7 @@ const Footer = () => {
               </div>
             </div>
             <p style={descriptionStyles}>
-              Empowering street kids and the transgender community through education, support, and opportunities for a brighter future.
+              Empowering street kids and the KhawajaSira (Intersex) community through education, support, and opportunities for a brighter future.
             </p>
             
             {/* Social Media Links */}
@@ -171,10 +171,7 @@ const Footer = () => {
               >
                 <i className="fab fa-instagram"></i>
               </a>
-              <a href="#" style={socialLinkStyles}>
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a href="#" style={socialLinkStyles}>
+              <a href="https://www.linkedin.com/company/project-soch-official/" style={socialLinkStyles}>
                 <i className="fab fa-linkedin-in"></i>
               </a>
             </div>
@@ -204,7 +201,7 @@ const Footer = () => {
                   onClick={(e) => {
                     e.preventDefault();
                     const phoneNumber = "491724350490";
-                    const message = "Hello! I would like to make a donation to support Project Soch's mission of empowering street kids and the transgender community. Please let me know how I can proceed with the donation. Thank you!";
+                    const message = "Hello! I would like to make a donation to support Project Soch's mission of empowering street kids and the KhawajaSira (Intersex) community. Please let me know how I can proceed with the donation. Thank you!";
                     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
                     window.open(whatsappUrl, '_blank');
                   }}

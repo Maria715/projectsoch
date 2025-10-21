@@ -152,7 +152,7 @@ const Hero = () => {
         <div style={{ maxWidth: '64rem', margin: '0 auto' }}>
           <h1 style={titleStyles}>
             Empowering Street Kids &
-            <span style={{ color: '#ff7f00' }}> Transgender Community</span>
+            <span style={{ color: '#ff7f00' }}> KhawajaSira (Intersex) Community</span>
           </h1>
           <p style={subtitleStyles}>
             Through education, support, and opportunities, we're building a brighter future for those who need it most.

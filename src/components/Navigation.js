@@ -188,7 +188,7 @@ const Navigation = () => {
               onClick={(e) => {
                 e.preventDefault();
                 const phoneNumber = "491724350490";
-                const message = "Hello! I would like to make a donation to support Project Soch's mission of empowering street kids and the transgender community. Please let me know how I can proceed with the donation. Thank you!";
+                const message = "Hello! I would like to make a donation to support Project Soch's mission of empowering street kids and the KhawajaSira (Intersex) community. Please let me know how I can proceed with the donation. Thank you!";
                 const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
                 window.open(whatsappUrl, '_blank');
               }}
@@ -236,7 +236,7 @@ const Navigation = () => {
                 e.preventDefault();
                 setIsMobileMenuOpen(false);
                 const phoneNumber = "491724350490";
-                const message = "Hello! I would like to make a donation to support Project Soch's mission of empowering street kids and the transgender community. Please let me know how I can proceed with the donation. Thank you!";
+                const message = "Hello! I would like to make a donation to support Project Soch's mission of empowering street kids and the KhawajaSira (Intersex) community. Please let me know how I can proceed with the donation. Thank you!";
                 const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
                 window.open(whatsappUrl, '_blank');
               }}
