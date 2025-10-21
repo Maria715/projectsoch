@@ -121,13 +121,13 @@ const Hero = () => {
     maxWidth: '1280px',
     margin: '0 auto',
     padding: '0 1rem',
-    marginTop: '4rem'
+    marginTop: '4rem',
   };
 
   const statsGridStyles = {
     display: 'grid',
     gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-    gap: '2rem'
+    gap: '2rem',
   };
 
   const statItemStyles = {
@@ -149,7 +149,7 @@ const Hero = () => {
   return (
     <section id="home" style={heroStyles}>
       <div style={containerStyles}>
-        <div style={{ maxWidth: '64rem', margin: '0 auto' }}>
+        <div style={{ maxWidth: '64rem', margin: '0 auto', paddingTop: '40px' }}>
           <h1 style={titleStyles}>
             Empowering Street Kids &
             <span style={{ color: '#ff7f00' }}> KhawajaSira (Intersex) Community</span>

@@ -26,7 +26,7 @@ function Home() {
       <Donate />
       <FadeInSection><Mission /></FadeInSection>
       <FadeInSection><Volunteers /></FadeInSection>
-      <FadeInSection><Contact /></FadeInSection>
+      <Contact />
       <Footer />
     </div>
   );
