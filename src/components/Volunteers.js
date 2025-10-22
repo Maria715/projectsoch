@@ -6,8 +6,9 @@ const TeamMemberCard = ({ image, name, role, tagline, message }) => {
   const cardContainer = {
     perspective: "1000px",
     width: "280px",
-    minHeight: "420px",
+    minHeight: "480px",
     margin: "1rem auto",
+    fontFamily: "Poppins, sans-serif", // ✅ unified font family
   };
 
   const cardStyles = {
@@ -26,11 +27,11 @@ const TeamMemberCard = ({ image, name, role, tagline, message }) => {
     borderRadius: "1rem",
     overflow: "hidden",
     boxShadow: "0 6px 18px rgba(255, 127, 0, 0.25)", // soft orange glow
+    backgroundColor: "white",
   };
 
   const frontStyles = {
     ...frontBackCommon,
-    backgroundColor: "white",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -41,7 +42,6 @@ const TeamMemberCard = ({ image, name, role, tagline, message }) => {
 
   const backStyles = {
     ...frontBackCommon,
-    backgroundColor: "white",
     transform: "rotateY(180deg)",
     display: "flex",
     flexDirection: "column",
@@ -62,14 +62,15 @@ const TeamMemberCard = ({ image, name, role, tagline, message }) => {
     alignItems: "center",
     justifyContent: "center",
     margin: "1.5rem auto",
-    boxShadow: "0 4px 12px rgba(0, 0, 0, 0.08)",
+    boxShadow: "0 12px 25px rgba(255, 127, 0, 0.25)", // same as old card style
+    border: "4px solid #fff7ed", // warm border
   };
 
   const imageFrontStyles = {
     width: "100%",
     height: "100%",
-    objectFit: "cover", // ensures face is centered, not stretched
-    objectPosition: "center top", // focuses on face area
+    objectFit: "cover",
+    objectPosition: "center top",
     borderRadius: "50%",
     display: "block",
   };
@@ -80,37 +81,41 @@ const TeamMemberCard = ({ image, name, role, tagline, message }) => {
     height: "140px",
     borderRadius: "50%",
     objectFit: "cover",
-    objectPosition: "center top", // keep centered crop on back too
+    objectPosition: "center top",
     marginBottom: "1rem",
-    boxShadow: "0 4px 10px rgba(0,0,0,0.2)",
+    boxShadow: "0 12px 25px rgba(255, 127, 0, 0.25)",
+    border: "4px solid #fff7ed",
   };
 
   const nameStyles = {
     fontWeight: 700,
     color: "#233d60",
-    fontSize: "1.5rem",
-    marginBottom: "0.25rem",
-    textAlign: "center",
+    fontSize: "1.25rem", // same as old design
+    marginBottom: "0.5rem",
   };
 
   const roleStyles = {
     color: "#ff7f00",
-    fontSize: "1rem",
-    marginBottom: "0.5rem",
-    textAlign: "center",
+    fontSize: "0.95rem",
+    marginBottom: "1rem",
+    fontWeight: 600,
+    textTransform: "uppercase",
+    letterSpacing: "0.05em",
   };
 
   const taglineStyles = {
     color: "#64748b",
     fontSize: "1rem",
     marginBottom: "0.5rem",
-    textAlign: "center",
+    lineHeight: 1.6,
   };
 
   const messageStyle = {
     color: "#64748b",
-    fontSize: "1.1rem",
+    fontSize: "1rem",
+    fontStyle: "italic",
     marginBottom: "0.5rem",
+    lineHeight: 1.7,
   };
 
   return (
@@ -151,12 +156,24 @@ const Volunteers = () => {
     gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
     gap: "2rem",
     padding: "2rem",
-    alignItems: "stretch", // keeps cards aligned
+    alignItems: "stretch",
+    fontFamily: "Poppins, sans-serif", // ✅ consistent typography across cards
   };
 
   return (
     <section id="volunteers">
-      <h2 style={{ textAlign: "center", marginBottom: "2rem" }}>Meet Our Team</h2>
+      <h2
+        style={{
+          textAlign: "center",
+          marginBottom: "2rem",
+          fontFamily: "Poppins, sans-serif",
+          fontWeight: 700,
+          color: "#233d60",
+          fontSize: "2rem",
+        }}
+      >
+        Meet Our Team
+      </h2>
       <div style={gridStyles}>
         {volunteers.map((member) => (
           <TeamMemberCard
