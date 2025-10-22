@@ -1,7 +1,8 @@
 import React from 'react';
+import volunteers from "../data/team";  // Import the JSON-like data
 
 //  Reusable Team Member Card Component 
-const TeamMemberCard = ({ image, name, role, email, socialLinks }) => {
+const TeamMemberCard = ({ image, name, role, tagline, message }) => {
   const cardContainer = {
     perspective: "1000px",
     width: "280px",
@@ -30,7 +31,12 @@ const TeamMemberCard = ({ image, name, role, email, socialLinks }) => {
   const frontStyles = {
     ...frontBackCommon,
     backgroundColor: "#f0f0f0",
-    display: "flex",
+      position: "absolute",
+  width: "100%",
+  height: "100%",
+   backfaceVisibility: "hidden",
+  borderRadius: "1rem",
+  overflow: "visible", // allow image to show fully
     alignItems: "center",
     justifyContent: "center",
   };
@@ -39,7 +45,7 @@ const TeamMemberCard = ({ image, name, role, email, socialLinks }) => {
     ...frontBackCommon,
     backgroundColor: "white",
     transform: "rotateY(180deg)",
-    display: "flex",
+    display:"flex",
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
@@ -49,11 +55,14 @@ const TeamMemberCard = ({ image, name, role, email, socialLinks }) => {
 
   //  front container for image
   const imageFrontContainer = {
-    width: "100%",
-    height: "100%",
-    borderRadius: "50% / 35%",
-    overflow: "hidden",
-    boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
+  alignItems:"10",
+  width: "40%",
+  height: "40%",
+  borderRadius: "55% / 55%",
+  overflow: "hidden",
+  boxShadow: "0 4px 12px rgba(145, 120, 120, 0.15)",
+  marginTop: "20px", //  reduce or remove this
+  marginLeft:"80px"
   };
 
   const imageFrontStyles = {
@@ -61,41 +70,46 @@ const TeamMemberCard = ({ image, name, role, email, socialLinks }) => {
     height: "100%",
     objectFit: "cover",
     display: "block",
+     marginTop: "0px",
   };
-
+// backimage 
   const Imageshape = {
-    width: "100px",
-    height: "100px",
-    borderRadius: "50%",
-    objectFit: "cover",
-    marginBottom: "1rem",
-    boxShadow: "0 4px 10px rgba(0,0,0,0.2)",
-  };
+  width: "140px",   // was 100px
+  height: "140px",  // was 100px
+  borderRadius: "50%",
+  objectFit: "cover",
+  marginBottom: "1rem",
+  boxShadow: "0 4px 10px rgba(0,0,0,0.2)",
+  paddingTop:"1px",
+};
+
 
 const nameStyles = {
   fontWeight: 700,
   color: "#233d60",
   fontSize: "1.5rem",  // 
   marginBottom: "0.25rem",
+  textAlign:"center",
 };
 
   const roleStyles = {
     color: "#ff7f00",
-    fontSize: "1.1rem",
+    fontSize: "1.0rem",
     marginBottom: "0.5rem",
+    textAlign:"center",
   };
 
-  const emailStyles = {
+ const taglineStyles = {
     color: "#64748b",
     fontSize: "1rem",
     marginBottom: "0.5rem",
+    textAlign:"center",
   };
 
-  const socialContainer = {
-    display: "flex",
-    justifyContent: "center",
-    gap: "0.5rem",
-    marginTop: "0.5rem",
+  const messageStyle = {
+     color: "#64748b",
+    fontSize: "1.2rem",
+    marginBottom: "0.5rem",
   };
 
   return (
@@ -108,33 +122,17 @@ const nameStyles = {
         {/* FRONT=> Image Container */}
         <div style={frontStyles}>
           <div style={imageFrontContainer}>
-            <img src={image} alt={name} style={imageFrontStyles} />
-          </div>
+          <img src={image} alt={name} style={imageFrontStyles} />
+           </div>
+          <h4 style={nameStyles}>{name}</h4>
+          <p style={roleStyles}>{role}</p>
+         <p style={taglineStyles}>{tagline}</p>
+         
         </div>
         {/*  BACK => Info Side */}
         <div style={backStyles}>
           <img src={image} alt={name} style={Imageshape} />
-          <h4 style={nameStyles}>{name}</h4>
-          <p style={roleStyles}>{role}</p>
-          {email && <p style={emailStyles}>{email}</p>}
-         <div style={socialContainer}>
-  {socialLinks?.map((link, index) => (
-    <div key={index} style={{ display: "flex", alignItems: "center", gap: "0.3rem" }}>
-      {/* Icon stays static */}
-      <img src={link.icon} alt={link.name} style={{ width: "22px", height: "22px" }} />
-      
-      {/* Clickable name */}
-      <a
-        href={link.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{ textDecoration: "none", color: "#0A66C2", fontWeight: "500" }}
-      >
-        {link.name}  {/* This will show "LinkedIn" */}
-      </a>
-    </div>
-  ))}
-</div>
+         <p style={messageStyle}>{message}</p>  
         </div>
       </div>
     </div>
@@ -143,24 +141,7 @@ const nameStyles = {
 
 //  Main Volunteers Component
 const Volunteers = () => {
-  const volunteers = [
-    {
 
-      name: "Your name",
-      role: "Position that you are holding in this project",
-      email: "Your gmail",
-      image: `${process.env.PUBLIC_URL}/images/maria.png`,  // path to your image
-   socialLinks: [
-  {
-
-    name: "LinkedIn", // Optional label text
-    url: "https://www.linkedin.com/in/maria-akhtar-067b88162/", // actual clickable link
-    icon: "/images/linkedin.jpg", // path to icon
-
-  },
-],
-    },
-  ];
 
   const gridStyles = {
     display: "grid",
@@ -169,18 +150,18 @@ const Volunteers = () => {
     padding: "2rem",
   };
 /* Loop throgh all volunteers and render a team member card for each*/
-  return (
+    return (
     <section id="volunteers">
       <h2 style={{ textAlign: "center", marginBottom: "2rem" }}>Meet Our Team</h2>
       <div style={gridStyles}>
         {volunteers.map((member) => (
           <TeamMemberCard
-        
+            key={member.id}
             image={member.image}
             name={member.name}
             role={member.role}
-            email={member.email}
-            socialLinks={member.socialLinks}
+            tagline={member.tagline}
+           message={member.message}
 
           />
         ))}
