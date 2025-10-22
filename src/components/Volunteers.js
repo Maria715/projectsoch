@@ -5,7 +5,7 @@ import volunteers from "../data/team"; // Import team data
 const TeamMemberCard = ({ image, name, role, tagline, message }) => {
   const cardContainer = {
     perspective: "1000px",
-    width: "280px",
+    width: "300px",
     minHeight: "480px",
     margin: "1rem auto",
     fontFamily: "Poppins, sans-serif", // ✅ unified font family
