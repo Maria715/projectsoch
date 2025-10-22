@@ -12,8 +12,8 @@ const volunteers = [
     name: "Muhammad Saqib",
     role: "Co-Founder & Head of Technology",
     image: `${process.env.PUBLIC_URL}/images/team/Muhammad Saqib – Head of Technology.png`,
-    tagline: "Saqib uses innovation as a force for good — building digital bridges that connect underprivileged kids to education and opportunity.",
-    message: "“Technology becomes meaningful when it uplifts lives and empowers the forgotten.”"
+tagline: "Saqib uses innovation as a force for good - building digital bridges that connect underprivileged kids to education and opportunity.",
+message: '"Technology becomes meaningful when it uplifts lives and empowers the forgotten."'
   },
   {
     id: 3,
@@ -123,7 +123,7 @@ const volunteers = [
     id: 16,
     name: "Muhammad Hussain",
     role: "Graphic Designer",
-    image: `${process.env.PUBLIC_URL}/images/team/Muhammad Hussain – Graphic Designer.jpeg`,
+    image: `${process.env.PUBLIC_URL}/images/team/Muhammad Hussain - Graphic Designer.jpeg`,
     tagline: "Hussain transforms vision into visuals — creating designs that reflect Soch’s purpose of empowering lives through education.",
     message: "“Art is the language of empathy — and we use it to teach the world.”"
   },
