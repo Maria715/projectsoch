@@ -18,19 +18,21 @@ const TeamMemberCard = ({ image, name, role, tagline, message }) => {
     transition: "transform 0.8s ease",
   };
 
-  const frontBackCommon = {
+    const frontBackCommon = {
     position: "absolute",
     width: "100%",
     height: "100%",
     backfaceVisibility: "hidden",
     borderRadius: "1rem",
     overflow: "hidden",
-    boxShadow: "0 8px 20px rgba(0,0,0,0.1)",
+    // soft shadow with orange tint
+    boxShadow: "0 6px 18px rgba(255, 127, 0, 0.25)", 
   };
+
 
   const frontStyles = {
     ...frontBackCommon,
-    backgroundColor: "#f0f0f0",
+    backgroundColor: "white",
       position: "absolute",
   width: "100%",
   height: "100%",
@@ -55,23 +57,26 @@ const TeamMemberCard = ({ image, name, role, tagline, message }) => {
 
   //  front container for image
   const imageFrontContainer = {
-  alignItems:"10",
-  width: "40%",
-  height: "40%",
-  borderRadius: "55% / 55%",
-  overflow: "hidden",
-  boxShadow: "0 4px 12px rgba(145, 120, 120, 0.15)",
-  marginTop: "20px", //  reduce or remove this
-  marginLeft:"80px"
+    width: "140px",
+    height: "140px",
+    borderRadius: "50%",          // fully circular
+    overflow: "hidden",
+    backgroundColor: "white",   // same as card background
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    margin: "1.5rem auto",        // centers image horizontally
+    boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
   };
 
   const imageFrontStyles = {
     width: "100%",
     height: "100%",
     objectFit: "cover",
+    borderRadius: "50%",          // ensure image itself is circular
     display: "block",
-     marginTop: "0px",
   };
+
 // backimage 
   const Imageshape = {
   width: "140px",   // was 100px
