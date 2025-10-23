@@ -1,6 +1,17 @@
 import React from 'react';
+import { useState } from 'react';
 
 const Stories = () => {
+
+  const [isOpen, setisOpen] = useState(null);   //for share icon toggle
+
+
+  const toggle = (id) =>{
+    setisOpen(isOpen === id ? null : id);
+  }
+
+
+
   const stories = [
     {
       id: 1,
@@ -12,7 +23,7 @@ const Stories = () => {
     {
       id: 2,
       name: "Arjun, 22",
-      role: "KhawajaSira (Intersex) youth",
+      role: "Transgender youth",
       image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80",
       story: "The skill training program changed my life. I learned computer skills and now I have my own small business. Project Soch believed in me when no one else did."
     },
@@ -22,7 +33,7 @@ const Stories = () => {
       role: "Student",
       image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80",
       story: "Thanks to Project Soch, I not only got an education but also found a family. The volunteers became my support system and helped me dream of a better future."
-    }
+    },
   ];
 
   const sectionStyles = {
@@ -107,6 +118,8 @@ const Stories = () => {
     color: '#ff7f00'
   };
 
+
+
   return (
     <section id="stories" style={sectionStyles}>
       <div style={containerStyles}>
@@ -119,7 +132,7 @@ const Stories = () => {
         
         <div style={gridStyles}>
           {stories.map((story) => (
-            <div key={story.id} style={cardStyles}>
+            <div key={story.id} style={cardStyles} className='relative'>
               <div style={headerStyles2}>
                 <img 
                   src={story.image} 
@@ -134,18 +147,75 @@ const Stories = () => {
               <p style={storyStyles}>
                 "{story.story}"
               </p>
-              <div style={starsStyles}>
+              
+              <div className='flex justify-between items-center '>
+                  <div style={starsStyles}>
                 <i className="fas fa-star" style={{ marginRight: '0.25rem' }}></i>
                 <i className="fas fa-star" style={{ marginRight: '0.25rem' }}></i>
                 <i className="fas fa-star" style={{ marginRight: '0.25rem' }}></i>
                 <i className="fas fa-star" style={{ marginRight: '0.25rem' }}></i>
                 <i className="fas fa-star"></i>
               </div>
+
+              <div className='text-gray-400 hover:text-gray-900 text-xl' onClick={()=> toggle(story.id)}>
+                <i className="fa-solid fa-share"></i>
+              </div>
+
+              </div>
+
+            {
+              isOpen === story.id && <Share story={story} />
+            }
             </div>
+            // @ts-ignore
+
+            // {isOpen === story.id && <Share /> }
           ))}
+
         </div>
+       
       </div>
     </section>
+  );
+};
+
+
+
+const Share = ({ story }) => {
+ 
+
+    const shareLink = (id) => `${window.location.origin}/stories?id=${id}`;
+
+    const whatsappShare = `https://api.whatsapp.com/send?text=${encodeURIComponent( shareLink(story.id))}`;
+    const facebookShare = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareLink(story.id))}`;
+    const linkedinShare = `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(shareLink(story.id))}&title=${encodeURIComponent("Inspiring Story")}&summary=${encodeURIComponent(story.story)}`;
+
+
+
+    const handleShare = (uri) =>{
+      window.open(uri, "_blank", "noopener,noreferrer")
+    }
+  return (
+    <div className="absolute -bottom-4 right-0 bg-white p-4 rounded-lg shadow-lg mt-4 text-center w-48 mx-auto border border-gray-100">
+      <p className="font-semibold text-gray-700 mb-3">Share on</p>
+      <div className="flex justify-center space-x-5 text-2xl text-gray-500">
+        <i
+          className="fa-brands fa-whatsapp hover:text-green-500 cursor-pointer"
+          onClick={()=>handleShare(whatsappShare)}
+         
+        ></i>
+        <i
+          className="fa-brands fa-facebook hover:text-blue-600 cursor-pointer"
+          onClick={()=>handleShare(facebookShare)}
+        
+        ></i>
+        <i
+          className="fa-brands fa-linkedin hover:text-blue-500 cursor-pointer"
+          onClick={()=>handleShare(linkedinShare)}
+          
+        ></i>
+      </div>
+    </div>
   );
 };
 
