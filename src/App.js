@@ -24,6 +24,7 @@ function Home() {
       <FadeInSection><Programs /></FadeInSection>
       <FadeInSection><GetInvolved /></FadeInSection>
       <Donate />
+      <FadeInSection><Stories /></FadeInSection>
       <FadeInSection><Mission /></FadeInSection>
       <FadeInSection><Volunteers /></FadeInSection>
       <Contact />
