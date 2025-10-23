@@ -148,14 +148,14 @@ const Stories = () => {
                 "{story.story}"
               </p>
               
-              <div className='flex justify-between items-center '>
-                  <div style={starsStyles}>
+              <div className='flex justify-end items-center '>
+                  {/* <div style={starsStyles}>
                 <i className="fas fa-star" style={{ marginRight: '0.25rem' }}></i>
                 <i className="fas fa-star" style={{ marginRight: '0.25rem' }}></i>
                 <i className="fas fa-star" style={{ marginRight: '0.25rem' }}></i>
                 <i className="fas fa-star" style={{ marginRight: '0.25rem' }}></i>
                 <i className="fas fa-star"></i>
-              </div>
+              </div> */}
 
               <div className='text-gray-400 hover:text-gray-900 text-xl' onClick={()=> toggle(story.id)}>
                 <i className="fa-solid fa-share"></i>

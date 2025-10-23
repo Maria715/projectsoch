@@ -14,6 +14,7 @@ import Footer from "./components/Footer";
 import FadeInSection from "./components/Atoms/FadeInsections";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import Stories from "./components/Stories";
 
 function Home() {
   return (
