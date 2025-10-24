@@ -100,6 +100,14 @@ message: '"Technology becomes meaningful when it uplifts lives and empowers the 
     message: "“Every click and post can become a step toward someone’s brighter future.”"
   },
   {
+    id: 12,
+    name: "Anum Hussain",
+    role: "Social Media team",
+    image: `${process.env.PUBLIC_URL}/images/team/anum.jpg`,
+    tagline: "Anum believes design can drive social change   crafting digital spaces that make learning inspiring and inclusive.",
+    message: "“Beauty in design is purpose in disguise   and ours is to educate.”"
+  },
+  {
     id: 11,
     name: "Ghulam Muhammad Khan",
     role: "Front-end",
