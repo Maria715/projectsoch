@@ -47,11 +47,13 @@ const Hero = () => {
   }, []);
 
   const heroStyles = {
-    paddingTop: '5rem',
-    paddingBottom: '4rem',
+    padding: '5rem 0' ,
+    // paddingBottom: '4rem',
     background: 'linear-gradient(135deg, #233d60 0%, #2d4a6b 50%, #1d314e 100%)',
     color: 'white',
-    textAlign: 'center'
+    textAlign: 'center',
+    minWidth: '100%'
+    
   };
 
   const containerStyles = {

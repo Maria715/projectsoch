@@ -18,7 +18,7 @@ import Stories from "./components/Stories";
 
 function Home() {
   return (
-    <div className="App">
+    <div className="App overflow-x-hidden w-[100%]">
       <Navigation />
       <Hero />
       <FadeInSection><About /></FadeInSection>
@@ -28,8 +28,8 @@ function Home() {
 
       <FadeInSection><Mission /></FadeInSection>
       <FadeInSection><Stories /></FadeInSection>
-      <FadeInSection><Volunteers /></FadeInSection>
-      <Contact />
+      <Volunteers />
+     <FadeInSection> <Contact /></FadeInSection>
       <Footer />
     </div>
   );

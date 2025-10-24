@@ -161,7 +161,7 @@ const Volunteers = () => {
   };
 
   return (
-    <section id="volunteers">
+    <section id="volunteers" className="mt-0">
       <h2
         style={{
           textAlign: "center",
@@ -176,6 +176,7 @@ const Volunteers = () => {
       </h2>
       <div style={gridStyles}>
         {volunteers.map((member) => (
+          
           <TeamMemberCard
             key={member.id}
             image={member.image}

@@ -34,9 +34,10 @@ const About = () => {
 
   const contentStyles = {
   display: 'grid',
-  gridTemplateColumns: 'repeat(auto-fit, minmax(500px, 1fr))',
+  gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
   gap: '2.5rem',
   alignItems: 'center',
+  
 };
 
 
@@ -115,6 +116,7 @@ const About = () => {
     boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
     objectFit: 'cover', 
     objectPosition: 'center top',
+    maxWidth:'400px'
   };
 
 
