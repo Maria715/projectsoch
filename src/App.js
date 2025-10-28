@@ -14,6 +14,7 @@ import Footer from "./components/Footer";
 import FadeInSection from "./components/Atoms/FadeInsections";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import OngoingCases from "./components/OngoingCases";
 
 function Home() {
   return (
@@ -21,6 +22,7 @@ function Home() {
       <Navigation />
       <Hero />
       <FadeInSection><About /></FadeInSection>
+       <OngoingCases />
       <FadeInSection><Programs /></FadeInSection>
       <FadeInSection><GetInvolved /></FadeInSection>
       <Donate />
