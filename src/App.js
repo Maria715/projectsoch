@@ -15,6 +15,18 @@ import FadeInSection from "./components/Atoms/FadeInsections";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 
+function VolunteersPage() {
+  return (
+    <>
+      <Navigation />
+      <FadeInSection>
+        <Volunteers />
+      </FadeInSection>
+      <Footer />
+    </>
+  );
+}
+
 function Home() {
   return (
     <div className="App">
@@ -40,9 +52,14 @@ function App() {
 
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+       <Route path="/volunteers" element={<VolunteersPage />} />
+
       </Routes>
     </Router>
   );
 }
 
 export default App;
+
+
+

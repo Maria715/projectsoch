@@ -1,5 +1,7 @@
 import React from 'react';
 import volunteers from "../data/team";  // Import the JSON-like data
+import Navigation from "./Navigation";
+import Footer from "./Footer";
 
 //  Reusable Team Member Card Component 
 const TeamMemberCard = ({ image, name, role, tagline, message }) => {
@@ -166,7 +168,9 @@ const Volunteers = () => {
           />
         ))}
       </div>
+      
     </section>
+    
   );
 };
 

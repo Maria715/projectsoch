@@ -175,7 +175,10 @@ const Navigation = () => {
             <a href="#get-involved" style={navLinkStyles} className='nav-hover'>Get Involved</a>
             <a href="#mission" style={navLinkStyles} className='nav-hover'>Mission</a>
             {/* <a href="#stories" style={navLinkStyles} className='nav-hover'>Stories</a> */}
-            <a href="#volunteers" style={navLinkStyles} className='nav-hover'>Volunteers</a>
+            <Link to="/volunteers" style={navLinkStyles} className='nav-hover'>
+              Volunteers
+            </Link>
+
             <a href="#contact" style={navLinkStyles} className='nav-hover'>Contact</a>
             <Link to="/login" style={navLinkStyles} className='nav-hover'>Login</Link>
           </div>
