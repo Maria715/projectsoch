@@ -16,7 +16,7 @@ const GetInvolved = () => {
       description: "Collaborate with us on projects, share resources, or help us expand our reach in the community.",
       icon: "fas fa-handshake",
       buttonText: "Partner Up",
-      link: "#contact"
+      link: "/partnerWithUS"
     },
     {
       id: 3,
