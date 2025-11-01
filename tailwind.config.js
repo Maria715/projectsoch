@@ -9,6 +9,9 @@ module.exports = {
         dark: '#1d314e',         // Dark variant
         'primary-light': '#2d4a6b',
         'secondary-light': '#ff8f1a'
+      },
+      fontFamily:{
+        poppins: ['Poppins', 'sans-serif'],
       }
     },
   },

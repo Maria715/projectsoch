@@ -15,6 +15,7 @@ import FadeInSection from "./components/Atoms/FadeInsections";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Stories from "./components/Stories";
+import Partner from "./pages/Partner";
 
 function Home() {
   return (
@@ -43,6 +44,7 @@ function App() {
 
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/partnerWithUS" element={<Partner />} />
       </Routes>
     </Router>
   );
